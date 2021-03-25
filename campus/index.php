@@ -60,7 +60,7 @@ if(isset($_POST['subPer'])){
                                     Rom: <?=$row['room']?> <br>
                                     Senger: <?=$row['bed']?> <br>
 
-                                <button value="myBtn" id="myBtn" class="imgBtn">Bestill her</button>
+                                <a href="./bestill.php"><button class="imgBtn">Bestill</button></a>
                             </div>
                             <?php
                         }
@@ -76,66 +76,7 @@ if(isset($_POST['subPer'])){
             </div>
         </section>
     </div>
-    
-
-    <!-- Denne er skjult -->
-<div id="mymodal" class="modal">
-
-    <!-- Modal -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <form action="index.php" method="post">
-            <div class="inputContainer">
-                <div class="inputs">
-                    <h1 style="text-align: center; padding-bottom: 20px;">Vi trenger litt informasjon om deg: </h1>
-
-
-                    <div class="input">
-                        <p> Navn: </p>
-                        <input class="inputBox" type="text" name="name" placeholder="Navn" required/>
-
-                        <p>Email: </p>
-                        <input class="inputBox" type="text" name="email" placeholder="Email" required />
-
-                        <p>Telefon: </p>
-                        <input class="inputBox" type="phone" name="phone" placeholder="Telfon" required />
-
-                        <p>Dato: </p>
-                        <input class="inputBox" type="date" name="date" placeholder="Dato" required style="margin-top: 0px;"/>
-
-                        <input type="submit" name="subPer" value="Bestill nå" class="modalBtn" style="margin-left: 20px;">
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 
 <script src="../js/scroll.js"></script>
-<script>
-
-function modalShow() {
-  var modal = document.getElementById("mymodal");
-
-  var btn = document.getElementById('myBtn');
-
-  var span = document.getElementsByClassName("close")[0];
-
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-}
-
-</script>
 </body>
 </html>

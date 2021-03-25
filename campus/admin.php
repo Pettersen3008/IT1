@@ -3,19 +3,15 @@ include "../backend/config.php";
 
 session_start();
 
-// Check user login or not
+// Sjekker om bruker ikke er i $_SESSION, hvis den ikke er det navigerer den tilbake til login skjermen
 if(!isset($_SESSION['username'])){
     header('Location: login.php');
 }
 
+// Hvis id satt så set id til $_SESSION og naviger til edit.php
 if(isset($_POST) and !empty($_POST['setid'])){
 	$_SESSION['id'] = $_POST['setid'];
-	header('Location: edit.php');
-}
-// logout
-if(isset($_POST['but_logout'])){
-    session_destroy();
-    header('Location: index.php');
+	header('Location: /pages/edit.php');
 }
 
 ?>
