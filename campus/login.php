@@ -1,5 +1,5 @@
 <?php 
-include "../backend/config.php";
+include "./backend/config.php";
 
 session_start();
 
@@ -37,7 +37,7 @@ if(isset($_POST['but_submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <style>
-        <?php include "../css/login.css"; ?>
+        <?php include "./css/login.css"; ?>
     </style>
 </head>
 <body>

@@ -1,9 +1,6 @@
 <?php 
-require('../backend/config.php');
 
-if(isset($_POST['subPer'])){
-    
-}
+require('./backend/config.php');
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +12,7 @@ if(isset($_POST['subPer'])){
     <title>Index</title>
     <style>
         <?php 
-        include "../css/index.css"; 
+        include "./css/index.css"; 
         ?>
     </style>
 </head>
@@ -52,7 +49,7 @@ if(isset($_POST['subPer'])){
                             // Men tar det på den enkle måten nå
                             ?>
                             <div class="card">
-                                <img src="../img/img1.jpg" alt="" class="cardImg">
+                                <img src="./img/img1.jpg" alt="" class="cardImg">
                                 <p class="carditems"> 
                                     ID: <?=$row['id']?> <br>
                                     Navn: <?=$row['name']?> <br>

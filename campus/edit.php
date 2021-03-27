@@ -1,5 +1,5 @@
 <?php
-include "../backend/config.php";
+include "./backend/config.php";
 
 session_start();
 
@@ -61,7 +61,7 @@ if(isset($_POST['delete'])){
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
         <style>
-            <?php include "../css/admin.css" ?>
+            <?php include "./css/admin.css" ?>
         </style>
 	</head>
 	<body class="loggedin">

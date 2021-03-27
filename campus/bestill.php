@@ -1,7 +1,7 @@
 <?php
 
 // Inkluderer vi databasen
-include "../backend/config.php";
+include "./backend/config.php";
 
 // Her sjekker vi om knappen submit er satt(trykket)
 // Deretter utfører det som kommer inni {}
@@ -14,8 +14,8 @@ if(isset($_POST['submit'])) {
     $date = $_POST['date'];
 
     // Her lager vi en querry som vi skal sende inn til databasen vår
-    $sql_querry = "INSERT INTO persons (name, email, phone, date) VALUES ('$name', '$email', '$phone', '$date');";
-
+    $sql_querry = "INSERT INTO persons (name, email, phone, date) VALUES ('$name', '$email', '$phone', '$date')";
+    
     // Her sender vi inn til database og får response
     if (mysqli_query($con, $sql_querry)) {
         header('location: /pages/complete.php');
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestill</title>
     <style>
-    <?php include "../css/bestill.css" ?>
+    <?php include "./css/bestill.css" ?>
     </style>
 </head>
 <body>

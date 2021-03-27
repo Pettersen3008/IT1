@@ -9,7 +9,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background-image: url('../img/bgNav.jpg');
+    background-image: url('./img/bgNav.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +78,7 @@
 .formImg {
     height: 100%;
     width: 50%;
-    background-image: url("../img/auth.jpg");
+    background-image: url("./img/auth.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
