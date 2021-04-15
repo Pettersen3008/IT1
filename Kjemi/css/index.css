@@ -19,6 +19,8 @@
     border-radius: 5px;
 }
 
+/* nav */
+
 .nav {
     height: 100px;
     width: 100%;
@@ -26,47 +28,54 @@
     justify-content: center;
     align-items: center;
     box-shadow: black 5px 0px 10px;
-    overflow: hidden;
 }
 
 .fixed {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    width:100%;
-    z-index:99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
     background-color: #fff;
-    height: 90px;
     opacity: 0.99;
 }
 
-.nav .links {
-    height: 100px;
+.nav .logo{
+    font: 1.1em sans-serif;
+    height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 150px;
+}
+
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.nav .logo{
-    font: 1.2em sans-serif;
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font: sans-serif;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 2rem;
+    cursor: pointer;
 }
 
 .nav li a {
     text-decoration: none;
     color: #333;
+    cursor: pointer;
 }
 
 .nav li a:hover {
@@ -75,11 +84,7 @@
     text-decoration: underline;
 }
 
-.nav li {
-    list-style-type: none;
-    margin: 2rem;
-}
-
+/* Nav Button */
 .navBtn {
     box-shadow: #fff 1px 1px 10px;
     background-color: #333;
@@ -95,10 +100,43 @@
     text-decoration: underline;
 }
 
-/*   About   */
+/* About */
 
 #about {
     height: 100vh;
     width: 100%;
+    display: block;
+    color: white;
     background-color: #333;
+}
+
+#about .heading {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px 250px 200px
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px 250px 200px
 }
